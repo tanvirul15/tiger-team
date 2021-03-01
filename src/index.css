@@ -5,39 +5,19 @@ body {
   background-size: cover;
   color: white;
 }
-*{
 
-}
-#showcase {
-  border: 1px;
-}
 
-table {
-  text-align: left;
-}
-
-table .fas {
-  margin-right: 10px;
-}
-
-.opacity-1 {
-  opacity: 0.85;
-}
 
 
 .player-display-area,
 .team-area{
-  border-radius: 5px;
   margin: 40px 0;
   min-height: 500px;
 }
 .player-display-area{
   padding: 40px 5%;
- 
-
+  border-right: 3px solid white;
 }
 .team-area{
-  padding: 40px 5%;
-  border-radius: 5%;
-  border-left: 2px solid white;
+  padding: 40px 5%;  
 }

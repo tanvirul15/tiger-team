@@ -1,0 +1,31 @@
+.selected-player{
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    background-color:#0a0107;
+    opacity: 0.97;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.selected-player p{
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+.selected-profile-image{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+#deselect-btn{
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+#deselect-btn:active{
+    color: rgb(163, 163, 255);
+}

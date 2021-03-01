@@ -1,14 +1,22 @@
 .player-card{
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
     background-color: black;
     opacity: 0.97;
     border-radius: 5%;
-    width: 50%;
+    width: 48%;
     text-align: center;
     padding: 10px 5px;
-    border: 3px solid orangered;
+    border: 3px solid rgb(194, 194, 194);
     display: inline-block;
-    height: 450px;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    transform: all 0.5s;
   
+}
+.player-card:hover{
+    opacity: 0.9 !important;
+
 }
 .profile-image{
     height: 120px;

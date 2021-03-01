@@ -1,25 +1,38 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import players from "./players/players.json";
+import playersDB from "./playersDB/players.json"
+import Player from "./components/Player/Player";
 
 function App() {
-  console.log(players);
+  
   return (
     <div className='App'>
       <Navbar />
-      <Footer />
+      
 
-      <div className='container'>
+    
         <div className='row'>
           <div className='col-8'>
-            <h1>Select Players</h1>
+            <div className="player-display-area">
+              <h1 className="text-center bg-dark opacity-1">Players Profile</h1>
+             
+             {
+               playersDB.map(player=><Player player={player} />)
+             }
+              
+
+
+            </div>
           </div>
           <div className='col-4'>
-            <h1>Selected Team</h1>
+            <div className="team-area">
+            <h1 className="text-center bg-dark opacity-1">Selected Team</h1>
+            </div>
           </div>
         </div>
-      </div>
+      
+      <Footer />
     </div>
   );
 }
